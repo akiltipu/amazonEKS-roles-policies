@@ -1,6 +1,22 @@
 # amazonEKS-roles-policies
 
-## aws-worker-node-role
+### Contents
+
+**aws-worker-node-role:** An IAM role that allows EC2 instances (worker nodes) to call AWS services on your behalf.
+
+**AmazonEC2ContainerRegistryReadOnly:** An IAM policy that provides read-only access to Amazon Elastic Container Registry (Amazon ECR) repositories.
+
+**AmazonEKS_CNI_Policy:** An IAM policy that grants permissions required by the Amazon VPC CNI Plugin (amazon-vpc-cni-k8s) to modify IP address configurations on EKS worker nodes.
+
+**AmazonEKSWorkerNodePolicy:** An IAM policy that allows Amazon EKS worker nodes to connect to Amazon EKS clusters and perform necessary operations.
+
+**node-group-autoscale-policy:** An IAM policy that enables AWS Auto Scaling to interact with the Kubernetes Cluster Autoscaler for automatically scaling node groups.
+
+### Usage
+These roles and policies can be used in conjunction with Amazon EKS to secure and manage access for various components within your Kubernetes cluster. Refer to the AWS documentation and best practices for detailed instructions on how to apply and utilize these resources effectively.
+
+
+### aws-worker-node-role
 
 Allows EC2 instances to call AWS services on your behalf.
 
